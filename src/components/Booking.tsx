@@ -1,7 +1,22 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Booking = () => {
+  useEffect(() => {
+    // Load Cal.com embed script
+    const script = document.createElement('script');
+    script.src = 'https://app.cal.com/embed/embed.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup script when component unmounts
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <section id="booking" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-6xl mx-auto">
@@ -24,7 +39,7 @@ const Booking = () => {
               <div className="space-y-4">
                 <div className="border-l-4 border-pastel-pink pl-4">
                   <h4 className="font-semibold text-gray-800">Initial Consultation</h4>
-                  <p className="text-gray-600 text-sm">45 minutes • Free</p>
+                  <p className="text-gray-600 text-sm">15 minutes • Free</p>
                   <p className="text-gray-600 text-sm mt-1">Assessment and goal setting</p>
                 </div>
                 
@@ -71,7 +86,7 @@ const Booking = () => {
             </div>
           </div>
           
-          {/* Calendly Embed */}
+          {/* Cal.com Embed */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="p-6 bg-gradient-to-r from-pastel-pink-light to-pastel-blue-light">
@@ -83,18 +98,13 @@ const Booking = () => {
                 </p>
               </div>
               
-              {/* Calendly Inline Widget */}
+              {/* Cal.com Inline Widget */}
               <div className="p-4">
                 <div 
-                  className="calendly-inline-widget" 
-                  data-url="https://calendly.com/your-username/debate-session"
-                  style={{ minWidth: '320px', height: '630px' }}
+                  data-cal-link="kaushal-balagurusamy-fczdbj/15min"
+                  data-cal-config='{"layout":"month_view","theme":"light"}'
+                  style={{ width: '100%', height: '600px', overflow: 'scroll' }}
                 ></div>
-                <script 
-                  type="text/javascript" 
-                  src="https://assets.calendly.com/assets/external/widget.js" 
-                  async
-                ></script>
               </div>
             </div>
           </div>
