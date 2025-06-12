@@ -11,15 +11,13 @@ const Header = () => {
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Elite Debate
-            <span className="block text-transparent bg-gradient-to-r from-pastel-pink to-pastel-blue bg-clip-text">
+            <span className="block text-transparent bg-gradient-to-r from-pastel-pink to-pastel-blue bg-clip-text py-[4px]">
               Coaching
             </span>
           </h1>
           
           {/* Subtitle */}
-          <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transform your argumentation skills with personalized coaching from a former national champion
-          </p>
+          
           
           {/* Call to Action */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
