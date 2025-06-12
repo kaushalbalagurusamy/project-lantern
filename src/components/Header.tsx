@@ -1,3 +1,4 @@
+
 import React from 'react';
 const Header = () => {
   return <header className="bg-white py-16 px-4 sm:px-6 lg:px-8">
@@ -24,6 +25,9 @@ const Header = () => {
             <a href="#booking" className="bg-gradient-to-r from-pastel-pink to-pastel-blue text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">Free Demo</a>
             <a href="#about" className="border-2 border-pastel-blue text-gray-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-pastel-blue-light transition-all duration-300">
               Learn More
+            </a>
+            <a href="#insights" className="border-2 border-pastel-pink text-gray-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-pastel-pink-light transition-all duration-300">
+              View Insights
             </a>
           </div>
         </div>
