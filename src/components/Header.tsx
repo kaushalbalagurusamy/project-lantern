@@ -11,7 +11,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/ae7968a2-07a1-4063-8873-096132cc758b.png" 
               alt="Debate Coach Logo" 
-              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto object-cover border-4 border-pastel-pink shadow-lg" 
+              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto object-cover border-4 border-pastel-blue shadow-lg" 
             />
           </div>
           
