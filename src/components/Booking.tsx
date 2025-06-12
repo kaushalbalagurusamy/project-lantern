@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 
 const Booking = () => {
@@ -37,11 +36,11 @@ const Booking = () => {
       
       Cal.ns["15min"]("inline", {
         elementOrSelector:"#my-cal-inline",
-        config: {"layout":"month_view"},
+        config: {"layout":"month_view","theme":"light"},
         calLink: "kaushal-balagurusamy-fczdbj/15min",
       });
       
-      Cal.ns["15min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+      Cal.ns["15min"]("ui", {"theme":"light","hideEventTypeDetails":false,"layout":"month_view"});
     `;
     document.head.appendChild(script);
 
