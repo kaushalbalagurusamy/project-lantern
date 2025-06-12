@@ -39,7 +39,7 @@ const About = () => {
           
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h4 className="text-xl font-semibold text-gray-800 mb-4">Achievements</h4>
+              <h4 className="text-xl font-semibold text-gray-800 mb-4">Experience</h4>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-pastel-pink rounded-full mt-2 mr-3 flex-shrink-0"></span>
