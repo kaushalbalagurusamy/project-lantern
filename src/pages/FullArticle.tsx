@@ -437,13 +437,11 @@ Use symbols to quickly indicate argument relationships:
 
 When tracking argument extensions, use indentation to show the relationship:
 
-```
 Main Argument
-  ├─ Initial response
-  │   └─ Counter-response
-  └─ Alternative response
-      └─ Final extension
-```
+  Initial response
+    Counter-response
+  Alternative response
+    Final extension
 
 ### Color Coding
 
