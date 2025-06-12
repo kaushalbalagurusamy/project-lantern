@@ -1,12 +1,18 @@
 
 import React from 'react';
+
 const Header = () => {
-  return <header className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+  return (
+    <header className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         <div className="animate-fade-in">
           {/* Profile Image */}
           <div className="mb-8">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=200&h=200&fit=crop&crop=face" alt="Professional headshot - Debate Coach" className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto object-cover border-4 border-pastel-pink shadow-lg" />
+            <img 
+              src="/lovable-uploads/ae7968a2-07a1-4063-8873-096132cc758b.png" 
+              alt="Debate Coach Logo" 
+              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto object-cover border-4 border-pastel-pink shadow-lg" 
+            />
           </div>
           
           {/* Headline */}
@@ -32,6 +38,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>;
+    </header>
+  );
 };
+
 export default Header;
