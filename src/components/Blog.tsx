@@ -1,5 +1,8 @@
+
 import React from 'react';
 import { Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 const Blog = () => {
   const blogPosts = [{
     id: 1,
@@ -30,7 +33,9 @@ const Blog = () => {
     readTime: "6 min read",
     category: "Fundamentals"
   }];
-  return <section id="insights" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-pastel-blue-light">
+
+  return (
+    <section id="insights" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-pastel-blue-light">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -41,7 +46,8 @@ const Blog = () => {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {blogPosts.map(post => <article key={post.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
+          {blogPosts.map(post => (
+            <article key={post.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden">
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <span className="px-3 py-1 bg-pastel-pink-light text-gray-700 rounded-full text-sm font-medium">
@@ -54,9 +60,9 @@ const Blog = () => {
                 </div>
                 
                 <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight hover:text-pastel-blue transition-colors duration-200">
-                  <a href="#" className="hover:underline">
+                  <Link to={`/article/${post.id}`} className="hover:underline">
                     {post.title}
-                  </a>
+                  </Link>
                 </h3>
                 
                 <p className="text-gray-600 mb-4 leading-relaxed">
@@ -65,20 +71,29 @@ const Blog = () => {
                 
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-500">{post.readTime}</span>
-                  <a href="#" className="text-pastel-blue hover:text-pastel-pink font-semibold transition-colors duration-200">
+                  <Link 
+                    to={`/article/${post.id}`}
+                    className="text-pastel-blue hover:text-pastel-pink font-semibold transition-colors duration-200"
+                  >
                     Read More →
-                  </a>
+                  </Link>
                 </div>
               </div>
-            </article>)}
+            </article>
+          ))}
         </div>
         
         <div className="text-center mt-12">
-          <a href="#" className="inline-flex items-center px-6 py-3 border-2 border-pastel-blue text-pastel-blue hover:bg-pastel-blue hover:text-white rounded-full font-semibold transition-all duration-300">
+          <Link 
+            to="/articles" 
+            className="inline-flex items-center px-6 py-3 border-2 border-pastel-blue text-pastel-blue hover:bg-pastel-blue hover:text-white rounded-full font-semibold transition-all duration-300"
+          >
             View All Articles
-          </a>
+          </Link>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Blog;
