@@ -10,7 +10,7 @@ const Header = () => {
           <div className="mb-8">
             <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full bg-gradient-to-r from-pastel-pink to-pastel-blue p-1 shadow-lg">
               <img 
-                src="/lovable-uploads/ae7968a2-07a1-4063-8873-096132cc758b.png" 
+                src="/lovable-uploads/b4546318-5e5e-4d93-badd-31ba5cb439fa.png" 
                 alt="Debate Coach Logo" 
                 className="w-full h-full rounded-full object-cover bg-white" 
               />
