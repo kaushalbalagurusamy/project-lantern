@@ -1,7 +1,9 @@
 
 import React from 'react';
+
 const About = () => {
-  return <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pastel-pink-light to-white">
+  return (
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pastel-pink-light to-white">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -12,6 +14,15 @@ const About = () => {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
+            {/* Profile Image */}
+            <div className="flex justify-center md:justify-start mb-8">
+              <img 
+                src="/lovable-uploads/a0859d11-3585-420c-845c-429b1036de15.png" 
+                alt="Professional headshot - Debate Coach" 
+                className="w-48 h-48 rounded-full object-cover border-4 border-pastel-pink shadow-lg" 
+              />
+            </div>
+            
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="text-center p-4 bg-white rounded-lg shadow-sm">
                 <div className="text-2xl font-bold text-pastel-pink mb-2">100+</div>
@@ -30,19 +41,19 @@ const About = () => {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-pastel-pink rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  TOC, NDCA, NCFL, NSDA
+                  Lincoln Douglas @ Lexington | Materials Engineering @ UC Berkeley
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-pastel-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  TOC | NDCA | NCFL | NSDA
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-pastel-pink rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  Former Head Coach @ Mission San Jose and Boston Latin
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-pastel-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
                   Strategic Communication Consultant for Net Worth $1M+ Individuals
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-pastel-pink rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Former Head Coach for Mission San Jose and Boston Latin School
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-pastel-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Lexington MA & UC Berkeley Engineering
                 </li>
               </ul>
             </div>
@@ -58,6 +69,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;
