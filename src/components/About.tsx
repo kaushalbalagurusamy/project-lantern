@@ -37,6 +37,15 @@ const About = () => {
           
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-xl shadow-lg">
+              <h4 className="text-xl font-semibold text-gray-800 mb-4">Specializations</h4>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-pastel-pink-light text-gray-700 rounded-full text-sm">Policy Debate</span>
+                <span className="px-3 py-1 bg-pastel-blue-light text-gray-700 rounded-full text-sm">Lincoln-Douglas</span>
+                <span className="px-3 py-1 bg-pastel-pink-light text-gray-700 rounded-full text-sm">Public Forum</span>
+              </div>
+            </div>
+            
+            <div className="bg-white p-6 rounded-xl shadow-lg">
               <h4 className="text-xl font-semibold text-gray-800 mb-4">Experience</h4>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
@@ -56,15 +65,6 @@ const About = () => {
                   Strategic Communication Consultant for Net Worth $1M+ Individuals
                 </li>
               </ul>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <h4 className="text-xl font-semibold text-gray-800 mb-4">Specializations</h4>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-pastel-pink-light text-gray-700 rounded-full text-sm">Policy Debate</span>
-                <span className="px-3 py-1 bg-pastel-blue-light text-gray-700 rounded-full text-sm">Lincoln-Douglas</span>
-                <span className="px-3 py-1 bg-pastel-pink-light text-gray-700 rounded-full text-sm">Public Forum</span>
-              </div>
             </div>
           </div>
         </div>
