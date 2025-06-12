@@ -13,6 +13,15 @@ const Blog = () => {
       readTime: "4 min read",
       category: "Philosophy",
       tags: ["identity", "growth", "consciousness", "debate"]
+    },
+    {
+      id: "2",
+      title: "Synchronizing Glossaries: Aligning Judge and Debater Frameworks",
+      excerpt: "Presenting in debate is inherently asymmetrical: you project claims without the benefit of direct, haptic feedback from your audience. Learn how to align with judge frameworks for deeper resonance.",
+      date: "December 13, 2024",
+      readTime: "5 min read",
+      category: "Debate Strategy",
+      tags: ["debate", "communication", "strategy", "frameworks"]
     }
   ];
 
