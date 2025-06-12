@@ -1,9 +1,6 @@
-
 import React from 'react';
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pastel-pink-light to-white">
+  return <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pastel-pink-light to-white">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -69,15 +66,13 @@ const About = () => {
                 <span className="px-3 py-1 bg-pastel-pink-light text-gray-700 rounded-full text-sm">Policy Debate</span>
                 <span className="px-3 py-1 bg-pastel-blue-light text-gray-700 rounded-full text-sm">Lincoln-Douglas</span>
                 <span className="px-3 py-1 bg-pastel-pink-light text-gray-700 rounded-full text-sm">Public Forum</span>
-                <span className="px-3 py-1 bg-pastel-blue-light text-gray-700 rounded-full text-sm">Congressional Debate</span>
-                <span className="px-3 py-1 bg-pastel-pink-light text-gray-700 rounded-full text-sm">Extemporaneous</span>
+                
+                
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
