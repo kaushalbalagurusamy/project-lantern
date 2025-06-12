@@ -4,7 +4,6 @@ import Header from '../components/Header';
 import About from '../components/About';
 import Blog from '../components/Blog';
 import Booking from '../components/Booking';
-import Footer from '../components/Footer';
 
 const Index = () => {
   return (
@@ -20,9 +19,6 @@ const Index = () => {
       
       {/* Booking Section with Calendly */}
       <Booking />
-      
-      {/* Footer */}
-      <Footer />
     </div>
   );
 };
