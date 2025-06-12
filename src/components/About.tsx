@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const About = () => {
@@ -15,12 +14,14 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             {/* Profile Image */}
-            <div className="flex justify-center md:justify-start mb-8">
-              <img 
-                src="/lovable-uploads/a0859d11-3585-420c-845c-429b1036de15.png" 
-                alt="Professional headshot - Debate Coach" 
-                className="w-48 h-48 rounded-full object-cover border-4 border-pastel-pink shadow-lg" 
-              />
+            <div className="flex justify-center mb-8">
+              <div className="w-48 h-48 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-blue p-1 shadow-lg">
+                <img 
+                  src="/lovable-uploads/a0859d11-3585-420c-845c-429b1036de15.png" 
+                  alt="Professional headshot - Debate Coach" 
+                  className="w-full h-full rounded-full object-cover bg-white" 
+                />
+              </div>
             </div>
             
             <div className="grid grid-cols-2 gap-6 mt-8">
