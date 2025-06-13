@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -22,6 +21,15 @@ const Blog = () => {
       readTime: "5 min read",
       category: "Debate Strategy",
       tags: ["debate", "communication", "strategy", "frameworks"]
+    },
+    {
+      id: "3",
+      title: "AI Debate Agent Product Spec",
+      excerpt: "A comprehensive specification for an advanced AI-powered debate preparation and analysis tool, featuring real-time round support, prep bank management, and intelligent case construction.",
+      date: "December 14, 2024",
+      readTime: "6 min read",
+      category: "Technology",
+      tags: ["AI", "technology", "debate", "product"]
     }
   ];
 

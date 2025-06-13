@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react';
@@ -43,6 +42,69 @@ By perceiving and synchronizing glossaries, you transform debate from a unilater
       readTime: "5 min read",
       category: "Debate Strategy",
       tags: ["debate", "communication", "strategy", "frameworks"]
+    },
+    "3": {
+      title: "AI Debate Agent Product Spec",
+      content: `This product specification outlines an advanced AI-powered debate preparation and analysis tool designed to revolutionize competitive debate training and performance.
+
+**User Interface Layout**
+
+The interface features a three-panel design optimized for debate preparation workflow:
+• Left Panel: File navigation, showing folders and prep-bank categories for quick switching
+• Middle Panel: Large, multi-window text editor for manual editing and readability of cases, evidence cards, analytics entries, and speech documents  
+• Right Panel: Interactive AI Agent window for real-time prompts, suggestions, and research assistance
+
+**Prep Bank Data Types**
+
+The system manages two primary data categories:
+
+*Evidence Management:*
+• Operating literature definitions to define scope and identify literature clusters
+• Systematic literature reviews (SLRs) and meta-studies, referenced and used as a graph to identify depth searches, niche literature, and new publications
+• Mechanistic warranting with detailed source tracking
+• Card-based return format with verbatim-style hotkeying for highlighting and minimization
+• Author qualifications and study methodology documentation
+• Tags serve as labels in the database for easy categorization
+
+*Analytics Framework:*
+• Arguments constructed without evidence (e.g., theoretical frameworks, paradigms, value hierarchies)
+• Each entry is saved with an editable summary for quick reference
+• Searchable theoretical constructs and philosophical positions
+
+**Case Construction System**
+
+The platform provides intelligent case building through:
+• Searchable database allowing users to check off and order arguments systematically
+• One-click generation of fixed, preset cases for common debate scenarios
+• Dynamic adaptation via opponent and judge profiling, leveraging scraped data from paradigms, wikis, social media, and LinkedIn
+
+**In-Round Support Features**
+
+Real-time assistance during competitive rounds includes:
+• Live ingestion of voice input or speech documents for instant analysis
+• Argument clustering for instantaneous flow tracking and organization
+• Case summary and Ask feature for unpacking unfamiliar arguments on the fly
+• Live-counter deep research to fetch new evidence cards on demand
+• Flow analytics stored in a temporary Round Prep bank, with post-round confirmation for permanent migration
+
+*Speech Document Creation:*
+• Mirrors case construction via checklist-driven database fields
+• Configurable speech time, extemporaneous time, and words-per-minute (WPM) settings
+• Automatic calculation of per-argument read time and display of time used versus total available (speech time minus extemporaneous reserve)
+
+**Post-Round Analysis**
+
+Comprehensive performance evaluation through:
+• Moment-by-moment feedback on argument effectiveness and strategic positioning
+• Analysis of strategic pivots and their impact on round outcomes
+• Opponent tactics identification and counter-strategy suggestions
+• Judge Reason-for-Decision (RFD) pattern analysis for future adaptation
+
+This AI Debate Agent represents the next evolution in competitive debate preparation, combining traditional research methods with cutting-edge artificial intelligence to create a comprehensive training and performance platform.`,
+      date: "December 14, 2024",
+      readTime: "6 min read",
+      category: "Technology",
+      tags: ["AI", "technology", "debate", "product"]
     }
   };
 
