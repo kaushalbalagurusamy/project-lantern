@@ -110,6 +110,89 @@ This AI Debate Agent represents the next evolution in competitive debate prepara
 
   const article = articles[id as keyof typeof articles];
 
+  // Helper function to render formatted content
+  const renderContent = (content: string) => {
+    const paragraphs = content.split('\n\n');
+    
+    return paragraphs.map((paragraph, index) => {
+      // Handle bold headers (text wrapped in **)
+      if (paragraph.includes('**')) {
+        const parts = paragraph.split('**');
+        return (
+          <div key={index} className="mb-6">
+            {parts.map((part, partIndex) => {
+              if (partIndex % 2 === 1) {
+                return <h3 key={partIndex} className="text-xl font-bold text-gray-900 mb-4">{part}</h3>;
+              } else if (part.trim()) {
+                return <p key={partIndex} className="text-gray-700 leading-relaxed">{part}</p>;
+              }
+              return null;
+            })}
+          </div>
+        );
+      }
+      
+      // Handle bullet points (lines starting with •)
+      if (paragraph.includes('•')) {
+        const lines = paragraph.split('\n');
+        const bulletPoints = [];
+        const regularText = [];
+        
+        lines.forEach(line => {
+          if (line.trim().startsWith('•')) {
+            bulletPoints.push(line.trim().substring(1).trim());
+          } else if (line.trim()) {
+            regularText.push(line.trim());
+          }
+        });
+        
+        return (
+          <div key={index} className="mb-6">
+            {regularText.length > 0 && (
+              <div className="mb-4">
+                {regularText.map((text, textIndex) => {
+                  // Check if this is italic text (wrapped in *)
+                  if (text.includes('*') && !text.includes('**')) {
+                    const parts = text.split('*');
+                    return (
+                      <p key={textIndex} className="text-gray-700 leading-relaxed mb-2">
+                        {parts.map((part, partIndex) => {
+                          if (partIndex % 2 === 1) {
+                            return <em key={partIndex}>{part}</em>;
+                          }
+                          return part;
+                        })}
+                      </p>
+                    );
+                  }
+                  return <p key={textIndex} className="text-gray-700 leading-relaxed mb-2">{text}</p>;
+                })}
+              </div>
+            )}
+            {bulletPoints.length > 0 && (
+              <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
+                {bulletPoints.map((point, pointIndex) => (
+                  <li key={pointIndex} className="leading-relaxed">{point}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+        );
+      }
+      
+      // Handle regular paragraphs
+      if (paragraph.trim()) {
+        return (
+          <p key={index} className="text-gray-700 leading-relaxed mb-6">
+            {paragraph}
+          </p>
+        );
+      }
+      
+      return null;
+    });
+  };
+
   if (!article) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-white to-pastel-blue-light">
@@ -203,11 +286,7 @@ This AI Debate Agent represents the next evolution in competitive debate prepara
           {/* Article Body */}
           <div className="p-8">
             <div className="prose prose-lg max-w-none">
-              {article.content.split('\n\n').map((paragraph, index) => (
-                <p key={index} className="text-gray-700 leading-relaxed mb-6">
-                  {paragraph}
-                </p>
-              ))}
+              {renderContent(article.content)}
             </div>
           </div>
           
