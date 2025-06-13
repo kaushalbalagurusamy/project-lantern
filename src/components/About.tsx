@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const About = () => {
@@ -51,19 +52,23 @@ const About = () => {
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-pastel-pink rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Lincoln Douglas @ Lexington | Materials Engineering @ UC Berkeley
+                  Top 10 Finish in Lincoln Douglas Nationally | Lexington HS (2017)
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-pastel-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  TOC | NDCA | NCFL | NSDA
+                  UC Berkeley Engineering BS
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-pastel-pink rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Former Head Coach @ Mission San Jose and Boston Latin
+                  10+ Years of Coaching Strategic Communication for Elite CEOs of $100M+ Companies and Top Ranked Debaters
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-pastel-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Strategic Communication Consultant for Net Worth $1M+ Individuals
+                  Former Head Coach @ Mission San Jose and Boston Latin
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-pastel-pink rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  TOC | NDCA | NCFL | NSDA
                 </li>
               </ul>
             </div>
