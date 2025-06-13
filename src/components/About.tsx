@@ -1,9 +1,6 @@
-
 import React from 'react';
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pastel-pink-light to-white">
+  return <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pastel-pink-light to-white">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -17,11 +14,7 @@ const About = () => {
             {/* Profile Image */}
             <div className="flex justify-center mb-8">
               <div className="w-48 h-48 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-blue p-1 shadow-lg">
-                <img 
-                  src="/lovable-uploads/a0859d11-3585-420c-845c-429b1036de15.png" 
-                  alt="Professional headshot - Debate Coach" 
-                  className="w-full h-full rounded-full object-cover bg-white" 
-                />
+                <img src="/lovable-uploads/a0859d11-3585-420c-845c-429b1036de15.png" alt="Professional headshot - Debate Coach" className="w-full h-full rounded-full object-cover bg-white" />
               </div>
             </div>
             
@@ -31,7 +24,7 @@ const About = () => {
                 <div className="text-gray-600">Students Coached</div>
               </div>
               <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                <div className="text-2xl font-bold text-pastel-blue mb-2">95%</div>
+                <div className="text-2xl font-bold text-pastel-blue mb-2">100%</div>
                 <div className="text-gray-600">Satisfaction Rate</div>
               </div>
             </div>
@@ -75,8 +68,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
