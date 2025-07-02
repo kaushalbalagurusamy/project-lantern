@@ -24,7 +24,7 @@ const Blog = () => {
     },
     {
       id: "3",
-      title: "AI Debate Agent Product Spec",
+      title: "Verbatim AI: A Preview",
       excerpt: "A comprehensive specification for an advanced AI-powered debate preparation and analysis tool, featuring real-time round support, prep bank management, and intelligent case construction.",
       date: "December 14, 2024",
       readTime: "6 min read",

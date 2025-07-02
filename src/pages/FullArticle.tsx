@@ -44,7 +44,7 @@ By perceiving and synchronizing glossaries, you transform debate from a unilater
       tags: ["debate", "communication", "strategy", "frameworks"]
     },
     "3": {
-      title: "AI Debate Agent Product Spec",
+      title: "Verbatim AI: A Preview",
       content: `![AI Debate Agent Interface Preview](/lovable-uploads/b18682ee-8f82-40cd-88bd-74a95660b897.png)
 *Figure 1: The AI Debate Agent interface featuring the three-panel design - document navigation (left), text editor (center), and AI chat assistant (right)*
 
