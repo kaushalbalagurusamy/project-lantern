@@ -45,7 +45,10 @@ By perceiving and synchronizing glossaries, you transform debate from a unilater
     },
     "3": {
       title: "AI Debate Agent Product Spec",
-      content: `This product specification outlines an advanced AI-powered debate preparation and analysis tool designed to revolutionize competitive debate training and performance.
+      content: `![AI Debate Agent Interface Preview](/lovable-uploads/b18682ee-8f82-40cd-88bd-74a95660b897.png)
+*Figure 1: The AI Debate Agent interface featuring the three-panel design - document navigation (left), text editor (center), and AI chat assistant (right)*
+
+This product specification outlines an advanced AI-powered debate preparation and analysis tool designed to revolutionize competitive debate training and performance.
 
 **User Interface Layout**
 
@@ -115,6 +118,32 @@ This AI Debate Agent represents the next evolution in competitive debate prepara
     const paragraphs = content.split('\n\n');
     
     return paragraphs.map((paragraph, index) => {
+      // Handle images (markdown format ![alt](src))
+      if (paragraph.trim().startsWith('![') && paragraph.includes('](')) {
+        const altMatch = paragraph.match(/!\[([^\]]*)\]/);
+        const srcMatch = paragraph.match(/\]\(([^)]*)\)/);
+        if (altMatch && srcMatch) {
+          return (
+            <div key={index} className="mb-6">
+              <img 
+                src={srcMatch[1]} 
+                alt={altMatch[1]} 
+                className="w-full rounded-lg shadow-md"
+              />
+            </div>
+          );
+        }
+      }
+      
+      // Handle italic captions (text wrapped in *)
+      if (paragraph.trim().startsWith('*') && paragraph.trim().endsWith('*') && !paragraph.includes('**')) {
+        return (
+          <p key={index} className="text-sm text-gray-600 italic text-center mb-6">
+            {paragraph.trim().slice(1, -1)}
+          </p>
+        );
+      }
+      
       // Handle bold headers (text wrapped in **)
       if (paragraph.includes('**')) {
         const parts = paragraph.split('**');
