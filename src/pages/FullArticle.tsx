@@ -44,66 +44,19 @@ By perceiving and synchronizing glossaries, you transform debate from a unilater
       tags: ["debate", "communication", "strategy", "frameworks"]
     },
     "3": {
-      title: "Verbatim AI: A Preview",
+      title: "Verbatim AI: A Teaser",
       content: `![AI Debate Agent Interface Preview](/lovable-uploads/b18682ee-8f82-40cd-88bd-74a95660b897.png)
 *Figure 1: The AI Debate Agent interface featuring the three-panel design - document navigation (left), text editor (center), and AI chat assistant (right)*
 
-This product specification outlines an advanced AI-powered debate preparation and analysis tool designed to revolutionize competitive debate training and performance.
+What cursor did for coding, verbatim-ai seeks to do to debate. 
 
-**User Interface Layout**
+Agents use openAI's o3 powered deep research following a strict card formatting protocol to return the most recent academic / governmental sources for evidence, with full author qualifications and study methodology. Sources are saved into your evidence bank and cards are linked to their sources. This makes in depth, mechanistic clash around evidence, author, and methodology comparison possible. You can spawn as many agents as you like, either using the chat panel or in round through the flow by invoking a slash command prompt.
 
-The interface features a three-panel design optimized for debate preparation workflow:
-• Left Panel: File navigation, showing folders and prep-bank categories for quick switching
-• Middle Panel: Large, multi-window text editor for manual editing and readability of cases, evidence cards, analytics entries, and speech documents  
-• Right Panel: Interactive AI Agent window for real-time prompts, suggestions, and research assistance
+Agents of different types can be spawned simultaneously as well up to the limits of your device hardware. For example, you can spawn several deep research agents with various thinking budgets allotted depending on whether you're finding a single card or trying to find a whole new position etc. In addition you can utilize the chat panel ask feature to explain to you any argument you see, also to varying depths depending on how much time you have. Feedback agents are capable of analyzing strategy, improvement and creating drills post mortem.
 
-**Prep Bank Data Types**
+Your cards are ingested from your file storage platform to create the cards, indexed by a fuzzy vector store allowing for extremely quick retrieval. This allows you to create your speech doc using @ insertions, directly from your flow without ever taking your attention away from the round. This also works for analytical argument. A configurable speaking speed allows the AI to calculate the speaking time each of your arguments and the amount of free time left in your speech document, to ensure effective budgeting.
 
-The system manages two primary data categories:
-
-*Evidence Management:*
-• Operating literature definitions to define scope and identify literature clusters
-• Systematic literature reviews (SLRs) and meta-studies, referenced and used as a graph to identify depth searches, niche literature, and new publications
-• Mechanistic warranting with detailed source tracking
-• Card-based return format with verbatim-style hotkeying for highlighting and minimization
-• Author qualifications and study methodology documentation
-• Tags serve as labels in the database for easy categorization
-
-*Analytics Framework:*
-• Arguments constructed without evidence (e.g., theoretical frameworks, paradigms, value hierarchies)
-• Each entry is saved with an editable summary for quick reference
-• Searchable theoretical constructs and philosophical positions
-
-**Case Construction System**
-
-The platform provides intelligent case building through:
-• Searchable database allowing users to check off and order arguments systematically
-• One-click generation of fixed, preset cases for common debate scenarios
-• Dynamic adaptation via opponent and judge profiling, leveraging scraped data from paradigms, wikis, social media, and LinkedIn
-
-**In-Round Support Features**
-
-Real-time assistance during competitive rounds includes:
-• Live ingestion of voice input or speech documents for instant analysis
-• Argument clustering for instantaneous flow tracking and organization
-• Case summary and Ask feature for unpacking unfamiliar arguments on the fly
-• Live-counter deep research to fetch new evidence cards on demand
-• Flow analytics stored in a temporary Round Prep bank, with post-round confirmation for permanent migration
-
-*Speech Document Creation:*
-• Mirrors case construction via checklist-driven database fields
-• Configurable speech time, extemporaneous time, and words-per-minute (WPM) settings
-• Automatic calculation of per-argument read time and display of time used versus total available (speech time minus extemporaneous reserve)
-
-**Post-Round Analysis**
-
-Comprehensive performance evaluation through:
-• Moment-by-moment feedback on argument effectiveness and strategic positioning
-• Analysis of strategic pivots and their impact on round outcomes
-• Opponent tactics identification and counter-strategy suggestions
-• Judge Reason-for-Decision (RFD) pattern analysis for future adaptation
-
-This AI Debate Agent represents the next evolution in competitive debate preparation, combining traditional research methods with cutting-edge artificial intelligence to create a comprehensive training and performance platform.`,
+Stay posted for the first true AI accelerated debate app.`,
       date: "December 14, 2024",
       readTime: "6 min read",
       category: "Technology",
