@@ -21,7 +21,7 @@ const Header = () => {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Project Lantern
             <span className="block text-transparent bg-gradient-to-r from-pastel-pink to-pastel-blue bg-clip-text py-[4px]">
-              1:1 Debate Coaching
+              Private Debate Coaching
             </span>
           </h1>
           

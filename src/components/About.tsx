@@ -13,7 +13,7 @@ const About = () => {
           <div className="space-y-6">
             {/* Profile Image */}
             <div className="flex justify-center mb-8">
-              <div className="w-48 h-48 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-blue p-1 shadow-lg">
+              <div className="w-64 h-64 md:w-72 md:h-72 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-blue p-1 shadow-lg">
                 <img src="/lovable-uploads/profile-photo.jpg" alt="Professional headshot - Debate Coach" className="w-full h-full rounded-full object-cover object-[center_20%] bg-white" />
               </div>
             </div>
