@@ -30,9 +30,9 @@ const Header = () => {
           
           {/* Call to Action */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="#booking" className="bg-gradient-to-r from-pastel-pink to-pastel-blue text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">Free Demo</a>
+            <a href="#booking" className="bg-gradient-to-r from-pastel-pink to-pastel-blue text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105">Book Session</a>
             <a href="#about" className="border-2 border-pastel-blue text-gray-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-pastel-blue-light transition-all duration-300">
-              Learn More
+              Contact Me
             </a>
             <a href="#insights" className="border-2 border-pastel-pink text-gray-700 px-8 py-4 rounded-full font-semibold text-lg hover:bg-pastel-pink-light transition-all duration-300">
               View Insights
