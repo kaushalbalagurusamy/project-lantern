@@ -14,7 +14,7 @@ const About = () => {
             {/* Profile Image */}
             <div className="flex justify-center mb-8">
               <div className="w-48 h-48 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-blue p-1 shadow-lg">
-                <img src="/lovable-uploads/profile-photo.jpg" alt="Professional headshot - Debate Coach" className="w-full h-full rounded-full object-cover bg-white" />
+                <img src="/lovable-uploads/profile-photo.jpg" alt="Professional headshot - Debate Coach" className="w-full h-full rounded-full object-cover object-top bg-white" />
               </div>
             </div>
             
