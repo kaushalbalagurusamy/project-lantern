@@ -1,5 +1,8 @@
 # Project Lantern
 
+[![CI](https://github.com/kaushalbalagurusamy/project-lantern/actions/workflows/ci.yml/badge.svg)](https://github.com/kaushalbalagurusamy/project-lantern/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Elite debate coaching and strategic communication platform offering tailored training programs across Policy Debate, Lincoln-Douglas, Public Forum, and executive communication, complete with integrated session booking and strategy publications.
 
 ---
